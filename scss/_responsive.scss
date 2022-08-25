@@ -1,0 +1,262 @@
+/***********************************
+MEDIA QUERIES
+***********************************/ 
+@media only screen and (max-width: 1700px) { 
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+
+}/* 1700 */
+
+@media only screen and (max-width: 1460px) {
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+
+}/* 1460 */
+
+@media only screen and (max-width: 1366px) {
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+
+} /* 1366 */
+
+@media only screen and (max-width: 1199px) {
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    // .header-gutter {
+    //     height: 90px;
+    //     min-height: 90px;
+    // }
+
+    // .header {  
+
+    //     .navbar {
+    //         padding: 25px 0;
+
+    //         .navbar-collapse {
+
+    //             .navbar-nav {
+    //                 margin-left: -18px;
+    //                 margin-right: -15px;
+
+    //                 li {
+    //                     margin-left: 18px;
+    //                     margin-right: 18px;
+    //                 }
+
+    //                 &.navbar-right {
+    //                     padding-left: 30px;
+
+    //                     li {
+    //                         margin-left: 15px;
+    //                         margin-right: 15px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+
+}/* 1199 */ 
+
+@media only screen and (max-width: 991px) {
+
+    h1, .h1 { font-size: 50px;  line-height: 61px; }
+    h2, .h2 { font-size: 42px;  line-height: 53px; } 
+
+    .btn {
+        padding: 14px 30px;
+    }
+
+    input[type="text"]:not(.select2-input),
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="password"],
+    input[type="file"],
+    select, textarea {    
+        padding: 13px 20px !important;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    // .header-gutter {
+    //     height: 80px;
+    //     min-height: 80px;
+    // }
+
+    // .header {
+
+    //     &.stop .navbar {
+    //         padding: 15px 0;
+    //     }
+
+    //     .navbar {
+    //         padding: 20px 0;
+
+    //         .navbar-collapse {
+
+    //             .navbar-nav {
+    //                 margin-left: -14px;
+    //                 margin-right: -12px;
+
+    //                 li {
+    //                     margin-left: 14px;
+    //                     margin-right: 14px;
+    //                 }
+
+    //                 &.navbar-right {
+    //                     padding-left: 24px;
+
+    //                     li {
+    //                         margin-left: 12px;
+    //                         margin-right: 12px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    
+    /***********************************
+    HOME STYLES
+    ***********************************/
+
+}/* 991 */
+
+@media only screen and (max-width: 767px) { 
+
+    h1, .h1 { font-size: 42px;  line-height: 53px; }
+    h2, .h2 { font-size: 36px;  line-height: 43px; }
+    h3, .h3 { font-size: 32px;  line-height: 39px; }
+    h4, .h4 { font-size: 26px;  line-height: 34px; } 
+
+    .btn {
+        padding: 10px 22px;
+    }
+
+    .entry-title {
+
+        .sub-title { 
+            margin-bottom: 0;
+        }
+    }
+
+    input[type="text"]:not(.select2-input),
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="password"],
+    input[type="file"],
+    select, textarea {    
+        padding: 10px 15px !important;
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    // .header-gutter {
+    //     height: 70px;
+    //     min-height: 70px;
+    // }
+
+    // .header {  
+
+    //     .navbar { 
+
+    //         .navbar-collapse {
+
+    //             .navbar-nav {  
+
+    //                 > li { 
+    //                     display: none;
+
+    //                     &.mobile-navbar-toggler {
+    //                         display: block !important;
+    //                     }
+    //                 } 
+    //             }
+    //         }
+    //     }
+    // }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+   
+}/* 767 */ 
+
+@media only screen and (max-width: 575px) { 
+
+    h1, .h1 { font-size: 36px;  line-height: 43px; }
+    h2, .h2 { font-size: 32px;  line-height: 39px; }
+    h3, .h3 { font-size: 26px;  line-height: 34px; }
+    h4, .h4 { font-size: 22px;  line-height: 27px; }
+    h5, .h5 { font-size: 20px;  line-height: 25px; } 
+
+    .btn {
+        padding: 7px 15px;
+    }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+    // .header { 
+
+    //     .navbar { 
+
+    //         .navbar-collapse {
+
+    //             .navbar-nav {
+    //                 margin-left: -10px;
+    //                 margin-right: -9px;
+
+    //                 li {
+    //                     margin-left: 10px;
+    //                     margin-right: 10px;
+    //                 }
+
+    //                 &.navbar-right {
+    //                     padding-left: 18px;
+
+    //                     li {
+    //                         margin-left: 9px;
+    //                         margin-right: 9px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    /***********************************
+    HOME STYLES
+    ***********************************/
+
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+
+    h1, .h1 { font-size: 32px;  line-height: 39px; }
+    h2, .h2 { font-size: 28px;  line-height: 35px; }
+    h3, .h3 { font-size: 24px;  line-height: 32px; }
+
+    /***********************************
+    PORTFOLIO STYLES
+    ***********************************/
+
+} /* 480 */
