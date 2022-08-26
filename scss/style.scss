@@ -807,6 +807,50 @@ HOME STYLES
 		}
 	}
 }
+
+.services-area {
+	padding: 155px 0 197px;
+	background: linear-gradient(176.62deg, #2D032A -2.48%, #160831 48.03%, #02201E 100.68%);
+
+	.container {
+		z-index: 1;
+		position: relative;
+
+		&:after, &:before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			background-repeat: no-repeat;
+			animation: 3s ease 0s infinite running floating-up-30; 
+		}
+
+		&:after {
+			top: 193px;
+			left: -277px;
+			width: 299.51px;
+			height: 395.38px;
+			animation-delay: 1s;
+			background-image: url(images/triangle-3.png);
+		}
+
+		&:before {
+			top: -59px;
+			right: -495px;
+			width: 340.5px;
+			height: 278.98px;
+			background-image: url(images/triangle-4.png);
+		}
+	}
+
+	&__content {
+		max-width: 648px;
+		margin-right: 54px;
+	}
+
+	&__media {
+		margin-left: -54px;
+	}
+}
 /***********************************
 FOOTER STYLES
 ***********************************/
