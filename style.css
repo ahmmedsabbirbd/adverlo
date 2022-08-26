@@ -910,14 +910,9 @@ HEADER STYLES
   padding: 20px 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.sidr .sidr-inner .mobile-header .navbar-header .navbar-brand {
-  padding: 0;
-  max-width: 130px;
-}
 .sidr .sidr-inner .mobile-header .navbar-header .navbar-toggle {
   display: block;
   cursor: pointer;
-  margin-left: 20px;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li {
   width: 100%;
@@ -1335,15 +1330,9 @@ MEDIA QUERIES
     line-height: 73px;
   }
 
-  .entry-title .title {
-    margin-bottom: 20px;
-  }
   .entry-title .description.description-lg p {
     font-size: 22px;
     line-height: 32px;
-  }
-  .entry-title .description p + p {
-    margin-top: 15px;
   }
   .entry-title .btn {
     margin-top: 30px;
@@ -1382,6 +1371,16 @@ MEDIA QUERIES
   .banner__content {
     max-width: 565px;
   }
+  .banner__content .title {
+    margin-bottom: 20px;
+  }
+  .banner__content .description.description-lg p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .banner__content .description p + p {
+    margin-top: 15px;
+  }
   .banner__media {
     margin-right: -24px;
     margin-bottom: -250px;
@@ -1397,22 +1396,9 @@ MEDIA QUERIES
     line-height: 63px;
   }
 
-  .entry-title .title {
-    margin-bottom: 15px;
-  }
   .entry-title .description.description-lg p {
     font-size: 20px;
     line-height: 30px;
-  }
-  .entry-title .description p + p {
-    margin-top: 12px;
-  }
-  .entry-title .btn {
-    margin-top: 20px;
-  }
-
-  .btn {
-    padding: 16px 25px;
   }
 
   /***********************************
@@ -1447,6 +1433,15 @@ MEDIA QUERIES
   .banner {
     padding: 140px 0 200px;
   }
+  .banner__content .title {
+    margin-bottom: 15px;
+  }
+  .banner__content p + p {
+    margin-top: 12px;
+  }
+  .banner__content .btn {
+    margin-top: 20px;
+  }
   .banner__media {
     margin-right: -24px;
     margin-bottom: -190px;
@@ -1467,24 +1462,9 @@ MEDIA QUERIES
     line-height: 46px;
   }
 
-  .entry-title .title {
-    margin-bottom: 12px;
-  }
   .entry-title .description.description-lg p {
     font-size: 18px;
     line-height: 28px;
-  }
-  .entry-title .description p + p {
-    margin-top: 10px;
-  }
-
-  .btn {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 14px 20px;
-  }
-  .btn.btn-lg {
-    font-size: 14px;
   }
 
   /***********************************
@@ -1528,6 +1508,9 @@ MEDIA QUERIES
   .banner {
     padding: 130px 0 180px;
   }
+  .banner__content .description p + p {
+    margin-top: 10px;
+  }
   .banner__media {
     margin-right: -24px;
     margin-bottom: -170px;
@@ -1550,15 +1533,6 @@ MEDIA QUERIES
 
   .entry-title .title {
     margin-bottom: 10px;
-  }
-
-  .btn {
-    font-size: 15px;
-    line-height: 19px;
-    padding: 12px 18px;
-  }
-  .btn.btn-lg {
-    font-size: 13px;
   }
 
   /***********************************
@@ -1596,7 +1570,7 @@ MEDIA QUERIES
     margin-right: auto;
   }
   .banner__media {
-    margin: 40px 0 -50px 0;
+    margin: 60px 0 -50px 0;
   }
   .banner__wave-layer {
     width: 720%;
@@ -1615,13 +1589,19 @@ MEDIA QUERIES
   }
 
   h2, .h2 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 36px;
   }
 
   h3, .h3 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .btn {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 14px 22px;
   }
 
   /***********************************
@@ -1649,6 +1629,9 @@ MEDIA QUERIES
     max-width: 341px;
   }
   .banner__media {
+    max-width: 277px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -40px;
   }
   .banner__wave-layer {
@@ -1676,31 +1659,31 @@ MEDIA QUERIES
   HEADER STYLES
   ***********************************/
   .header-gutter {
-    height: 85px;
-    min-height: 85px;
+    height: 78px;
+    min-height: 78px;
   }
 
   .header .navbar {
     padding: 24px 0;
   }
   .header .navbar .navbar-header .logo .navbar-brand {
-    max-width: 130px;
+    max-width: 99px;
   }
 
   /***********************************
   HOMES STYLES
   ***********************************/
-  .banner {
-    padding: 110px 0 80px;
-  }
   .banner__content .title {
-    max-width: 341px;
+    max-width: 319px;
   }
-  .banner__media {
-    margin-bottom: -40px;
+  .banner__content .btn {
+    background-color: #F03A9E;
+  }
+  .banner__content .btn:before {
+    background-color: #7423C6;
   }
   .banner__wave-layer {
-    width: 780%;
+    width: 900%;
   }
 }
 /* 480 */
