@@ -449,3 +449,9 @@ $social-colors: (
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
+
+@-webkit-keyframes floating-up-30 {
+	from { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
+	65%  { -webkit-transform: translate(0, 50px); transform: translate(0, 50px); }
+	to   { -webkit-transform: translate(0, 0px); transform: translate(0, 0px); }    
+}

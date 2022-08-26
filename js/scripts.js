@@ -107,6 +107,23 @@
 	}
 	window.onload = setGutterHeight;
 	window.onresize = setGutterHeight;
+
+
+	/*** img replace of what-do section */
+	var laptopSreenUrl = $(".what-do__content .man img")[0].attributes.src.nodeValue;
+	var mobileSreenUrl = $(".what-do__content .man img").data('mobile-image');
+
+
+	function imgReplace(){
+		if ($(window).width() <= 767) {
+			$(".what-do__content .man img").attr("src",mobileSreenUrl);
+		} else {
+			$(".what-do__content .man img").attr("src", laptopSreenUrl);
+		}
+	}
+	
+	window.onload = imgReplace;
+	window.onresize = imgReplace;
 	
 	/*** Image to SVG */
 	$('img.svg').each(function(){

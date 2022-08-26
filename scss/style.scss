@@ -725,6 +725,88 @@ HOME STYLES
 	}
 }
 
+.why-adverlo {
+	padding: 50px 0 125px;
+
+	&__content {
+		max-width: 626px;
+
+		.description  {
+
+			p + p {
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+.businesses {
+	padding: 102px 0 162px;
+	background: linear-gradient(159.36deg, #2D032A 10.63%, #160831 47.18%, #02201E 85.3%);
+
+	.container {
+		z-index: 1;
+		position: relative;
+
+		&:after, &:before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			background-repeat: no-repeat;
+			animation: 3s ease 0s infinite running floating-up-30; 
+		}
+
+		&:after {
+			top: 236px;
+			left: -312px;
+			width: 320.49px;
+			height: 501.34px;
+			animation-delay: 1s;
+			background-image: url(images/triangle-1.png);
+		}
+
+		&:before {
+			top: 67px;
+			right: -421px;
+			width: 413.51px;
+			height: 479.64px;
+			background-image: url(images/triangle-2.png);
+		}
+	}
+
+	&__content {
+		max-width: 543px;
+		margin: 0 auto 115px;
+	}
+
+	&__item {
+		height: 100%;
+
+		&-wrapper {
+			margin: auto;
+			display: grid;
+			gap: 110px 24px;
+			max-width: 849px;
+  			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.icon {
+			max-width: 122px;
+			margin: 0 auto 54px;
+		}
+	}
+}
+
+.what-do {
+	padding: 125px 0 155px;
+
+	&__content {
+
+		.paid {
+			margin-bottom: 25px
+		}
+	}
+}
 /***********************************
 FOOTER STYLES
 ***********************************/

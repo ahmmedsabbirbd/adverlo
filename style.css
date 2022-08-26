@@ -310,6 +310,20 @@ BASE STYLES
             transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
+@-webkit-keyframes floating-up-30 {
+  from {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
 @font-face {
   font-family: "adverlo";
   src: url("fonts/adverlo.eot?76896712");
@@ -1082,6 +1096,76 @@ HOME STYLES
           animation: move_wave 15s linear infinite;
 }
 
+.why-adverlo {
+  padding: 50px 0 125px;
+}
+.why-adverlo__content {
+  max-width: 626px;
+}
+.why-adverlo__content .description p + p {
+  margin-top: 24px;
+}
+
+.businesses {
+  padding: 102px 0 162px;
+  background: linear-gradient(159.36deg, #2D032A 10.63%, #160831 47.18%, #02201E 85.3%);
+}
+.businesses .container {
+  z-index: 1;
+  position: relative;
+}
+.businesses .container:after, .businesses .container:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-animation: 3s ease 0s infinite running floating-up-30;
+          animation: 3s ease 0s infinite running floating-up-30;
+}
+.businesses .container:after {
+  top: 236px;
+  left: -312px;
+  width: 320.49px;
+  height: 501.34px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-image: url(images/triangle-1.png);
+}
+.businesses .container:before {
+  top: 67px;
+  right: -421px;
+  width: 413.51px;
+  height: 479.64px;
+  background-image: url(images/triangle-2.png);
+}
+.businesses__content {
+  max-width: 543px;
+  margin: 0 auto 115px;
+}
+.businesses__item {
+  height: 100%;
+}
+.businesses__item-wrapper {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 110px 24px;
+  max-width: 849px;
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+.businesses__item .icon {
+  max-width: 122px;
+  margin: 0 auto 54px;
+}
+
+.what-do {
+  padding: 125px 0 155px;
+}
+.what-do__content .paid {
+  margin-bottom: 25px;
+}
+
 /***********************************
 FOOTER STYLES
 ***********************************/
@@ -1322,6 +1406,17 @@ MEDIA QUERIES
   .banner__wave-layer {
     width: 450%;
   }
+
+  .businesses .container:after {
+    left: -140px;
+  }
+  .businesses .container:before {
+    right: -220px;
+  }
+
+  .what-do {
+    padding: 100px 0 120px;
+  }
 }
 /* 1460 */
 @media only screen and (max-width: 1366px) {
@@ -1388,6 +1483,13 @@ MEDIA QUERIES
   .banner__wave-layer {
     width: 500%;
   }
+
+  .businesses {
+    padding: 90px 0 130px;
+  }
+  .businesses__content {
+    margin-bottom: 100px;
+  }
 }
 /* 1366 */
 @media only screen and (max-width: 1199px) {
@@ -1448,6 +1550,27 @@ MEDIA QUERIES
   }
   .banner__wave-layer {
     width: 550%;
+  }
+
+  .why-adverlo {
+    padding-bottom: 100px;
+  }
+
+  .businesses {
+    padding: 80px 0 100px;
+  }
+  .businesses__content {
+    margin-bottom: 100px;
+  }
+  .businesses__item-wrapper {
+    gap: 80px 24px;
+  }
+  .businesses__item .icon {
+    margin-bottom: 45px;
+  }
+
+  .what-do {
+    padding: 80px 0 100px;
   }
 }
 /* 1199 */
@@ -1518,6 +1641,27 @@ MEDIA QUERIES
   .banner__wave-layer {
     width: 600%;
   }
+
+  .why-adverlo {
+    padding-bottom: 80px;
+  }
+
+  .businesses {
+    padding: 70px 0 80px;
+  }
+  .businesses__content {
+    margin-bottom: 80px;
+  }
+  .businesses__item-wrapper {
+    gap: 60px 24px;
+  }
+  .businesses__item .icon {
+    margin-bottom: 35px;
+  }
+
+  .what-do {
+    padding: 60px 0 80px;
+  }
 }
 /* 991 */
 @media only screen and (max-width: 767px) {
@@ -1529,10 +1673,6 @@ MEDIA QUERIES
   h2, .h2 {
     font-size: 32px;
     line-height: 42px;
-  }
-
-  .entry-title .title {
-    margin-bottom: 10px;
   }
 
   /***********************************
@@ -1568,12 +1708,45 @@ MEDIA QUERIES
     max-width: 383px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
   }
   .banner__media {
     margin: 60px 0 -50px 0;
   }
   .banner__wave-layer {
     width: 720%;
+  }
+
+  .why-adverlo {
+    padding-bottom: 60px;
+  }
+  .why-adverlo__content {
+    text-align: center;
+  }
+  .why-adverlo__content .description p + p {
+    margin-top: 20px;
+  }
+  .why-adverlo__media {
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  .businesses__content {
+    margin-bottom: 50px;
+  }
+  .businesses__item .icon {
+    margin-bottom: 30px;
+  }
+  .businesses__item .title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .what-do {
+    padding: 50px 0 75px;
+  }
+  .what-do__content .title {
+    margin-bottom: 23px;
   }
 }
 /* 767 */
@@ -1637,6 +1810,32 @@ MEDIA QUERIES
   .banner__wave-layer {
     width: 780%;
   }
+
+  .why-adverlo {
+    padding-bottom: 50px;
+  }
+  .why-adverlo__media {
+    max-width: 258px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .businesses__item-wrapper {
+    gap: 55px 23px;
+  }
+  .businesses__item .icon {
+    max-width: 80px;
+    margin-bottom: 20px;
+  }
+  .businesses__item .title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .what-do__content .paid {
+    max-width: 217px;
+    margin: 0 auto 40px;
+  }
 }
 /* 575 */
 @media only screen and (max-width: 480px) {
@@ -1684,6 +1883,19 @@ MEDIA QUERIES
   }
   .banner__wave-layer {
     width: 900%;
+  }
+
+  .businesses__content {
+    max-width: 275px;
+  }
+  .businesses__content .title {
+    text-transform: inherit !important;
+  }
+  .businesses__item .icon {
+    max-width: 58px;
+  }
+  .businesses__item .title {
+    font-size: 15px;
   }
 }
 /* 480 */
