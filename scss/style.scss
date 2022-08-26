@@ -80,9 +80,21 @@ section {
 
 .container {
 	width: 100%;
-	max-width: 1339px;
+	max-width: 1357px;
+	padding-left: 24px;
+	padding-right: 24px;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+}
+
+.row {
+	margin-left: -13.5px;
+	margin-right: -13.5px;
+
+	>[class*="col"] {
+		padding-left: 13.5px;
+		padding-right: 13.5px;
+	}
 }
 
 .btn {
@@ -297,8 +309,8 @@ HEADER STYLES
 		@include transition(all .3s ease);
 
 		.container {
-			padding-left: 15px;
-			padding-right: 15px;
+			padding-left: 24px;
+			padding-right: 24px;
 		}
 
 		.navbar-header {
@@ -415,7 +427,7 @@ HEADER STYLES
 	margin: 0;
     border: 0;
     padding: 0;
-    width: 32px;
+    width: 30px;
     display: block;
     border-radius: 0;
     overflow: inherit;
@@ -449,7 +461,7 @@ HEADER STYLES
 			@include transition(transform 150ms linear 150ms);
 
 			&:nth-child(1) {
-				@include transform(translateY(10px) rotate(45deg));
+				@include transform(translateY(7px) rotate(45deg));
         	}
 
         	&:nth-child(2) {
@@ -457,17 +469,16 @@ HEADER STYLES
         	}
 
         	&:nth-child(3) {	
-        		@include transform(translateY(-10px) rotate(-45deg));
+        		@include transform(translateY(-7px) rotate(-45deg));
         	}
 		}
     }
 
     .icon-bar {
     	width: 100%;
-    	height: 4px;
+    	height: 1px;
     	display: block;
-    	border-radius: 500px;
-    	background-color: $primary;
+    	background-color: $white;
 	    @include transition(transform 150ms linear 150ms);
 
 	    &:not(:last-child) {
@@ -485,9 +496,31 @@ HEADER STYLES
     position: fixed;
     max-width: 320px;
     overflow-y: auto;
-    background: $white;
     overflow-x: hidden;
+    background: $primary;
     box-shadow: 0px 0px 6px rgba($black, 0.3);
+
+    &:after, &:before {
+		width: 100%;
+		height: 100%;
+		content: "";
+		position: absolute; 
+		@include transform(matrix(-1, 0, 0, 1, 0, 0));
+	}
+
+	&:after {
+		top: 0;
+		left: 0;
+		z-index: -2; 
+		background: linear-gradient(253.59deg, #FF38A5 52.77%, #00918A 74.11%);
+	}
+
+	&:before {
+		top: 0;
+		left: 0; 
+		z-index: -1;
+		background: linear-gradient(199.51deg, #43003F 0.76%, #211044 51.94%, #003634 105.3%);
+	}
 
     &.right {
 	    left: auto;
@@ -506,12 +539,12 @@ HEADER STYLES
 
 			.navbar-header {
 				float: none;
-				padding: 20px 15px;
-				border-bottom: 1px solid rgba($black, 0.2);
+				padding: 20px 24px;
+				border-bottom: 1px solid rgba($white, 0.2);
 
 				.navbar-brand {
 					padding: 0;
-					max-width: 150px;
+					max-width: 130px;
 				}
 
 				.navbar-toggle {
@@ -528,71 +561,80 @@ HEADER STYLES
 					>li {
 						width: 100%;
 						display: block;
-						padding: 12px 15px;
-						border-bottom: 1px solid rgba($black, 0.2); 
+						padding: 12px 24px;
+						border-bottom: 1px solid rgba($white, 0.2); 
 
-						> a {
-							color: $black;
-							display: block;  
-							font-size: 16px; 
-							font-weight: 600;
-							line-height: 19px;
+						 > a {
+							color: $white; 
+							display: block;
+							font-size: 18px; 
+							font-weight: 500; 
+							line-height: 28px;
+							position: relative;
 							@include transition(all 0.3s ease);
-						} 
 
-						&.active, &:hover, &:focus {
+							&:before {
+	                            left: 0;
+	                            right: 0;
+	                            width: 100%;
+	                            height: 3px;
+	                            content: '';
+	                            bottom: -3px;
+	                            position: absolute;
+	                            background-color: $blue;
+	                            @include transform(scaleX(0));
+	                            @include transition(all .3s ease);
+	                        }
+						}
 
-							> a:any-link {
-							}
-						} 
-
-						&.btn-menu { 
-							border-bottom: none;
+						&.btn-menu {
 
 							> a {
-								color: $white;
-								overflow: hidden;
 								text-align: center;
-								padding: 10.5px 17.2px;
-								background-color: $primary;
-								@include border-radius(5px);
+								font-size: 15px;
+								overflow: hidden;
+								font-weight: 500;
+								line-height: 18px;
+								padding: 18px 25px;
+								background-color: $pink;
+								color: $white !important;
+								text-transform: capitalize;
+								@include border-radius(80px);
 								@include transition(all .5s cubic-bezier(0.42, 0, 0.58, 1));
 
-								&:before, &:after {
+								&:before {
 								    top: 0;
+								    left: 0;
 								    width: 0;
-								    left: 100%;
 								    z-index: -1;
 								    content: "";
 								    height: 100%;
 								    position: absolute;
-								    mix-blend-mode: overlay;
-								    background-color: $black;
+								    background-color: $primary;
+									@include transform(inherit !important);
 								    @include transition(all .5s cubic-bezier(0.42, 0, 0.58, 1));
-								}
-
-								&:before {
-								    left: 0;
-								    width: 0;
-								    background-color: $black;
-								}
-
-							}
+								}						} 
 
 							&.active, &:hover, &:focus {
-								
-								> a {
-									color: $white;
 
-									&:before, &:after {
+								> a {
+
+									&:before {
 										width: 100%;
-									}
-									
-									&:after {
-										left: 0;
 									}
 								}
 							}
+						} 
+
+						&.active, &:hover, &:focus {
+
+							> a:any-link { 
+	                            color: $blue;
+
+	                            &:before {
+	                                @include transform(scale(1));
+	                            }
+	                        }
 						}
 					}
 				}
@@ -608,7 +650,7 @@ HOME STYLES
 	z-index: 1;
 	overflow: hidden;
 	position: relative;
-	padding: 207px 0 317px;
+	padding: 207px 0 298px;
 
 	&:after, &:before {
 		width: 100%;
@@ -630,6 +672,19 @@ HOME STYLES
 		left: 0; 
 		z-index: -1;
 		background: linear-gradient(199.51deg, #43003F 0.76%, #211044 51.94%, #003634 105.3%);
+	}
+
+	&__content {
+		z-index: 6;
+		max-width: 615px;
+		position: relative;
+	}
+
+	&__media {
+		z-index: 6;
+		position: relative;
+		margin-right: -99px;
+		margin-bottom: -264px;
 	}
 
 	&__wave {
@@ -664,7 +719,7 @@ HOME STYLES
 
 			&.waveTop {
 				z-index: 4;
-				background-position: 50% 540%;
+			    background-size: 50% 130px;
 			    animation: move_wave 40s linear infinite;
 			}
 
@@ -673,17 +728,6 @@ HOME STYLES
 			    animation: move_wave 15s linear infinite;
 			}
 		}
-	}
-
-	&__content {
-		z-index: 6;
-		max-width: 615px;
-		position: relative;
-	}
-
-	&__media {
-		margin-right: -99px;
-		margin-bottom: -264px;
 	}
 }
 

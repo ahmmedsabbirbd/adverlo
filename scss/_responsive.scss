@@ -14,249 +14,576 @@ MEDIA QUERIES
     /***********************************
     HOMES STYLES
     ***********************************/
+    .banner {
+        padding: 190px 0 260px;
+
+        &__media {
+            margin-right: -24px;
+        }
+
+        &__wave-layer {
+            width: 450%;
+        }
+    }
 
 }/* 1460 */
 
 @media only screen and (max-width: 1366px) {
 
+    h1, .h1 { font-size: 60px;  line-height: 73px; }
+
+    .entry-title {
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .description {
+
+            &.description-lg {
+
+                p {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+
+            p + p {
+                margin-top: 15px;
+            }
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar { 
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    > li {
+                        margin-left: 15px;
+                        margin-right: 15px;
+
+                        > a {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+                        &.btn-menu {
+
+                            > a {
+                                font-size: 16px;
+                                line-height: 22px;
+                                padding: 16px 23px;
+                            }
+                        }
+                    }
+
+                    &.navbar-right {
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
     /***********************************
     HOMES STYLES
     ***********************************/
+    .banner {
+        padding: 160px 0 230px;
+
+        &__content {
+            max-width: 565px;
+        }
+
+        &__media {
+            margin-right: -24px;
+            margin-bottom: -250px;
+        }
+
+        &__wave-layer {
+            width: 500%;
+        }
+    }
 
 } /* 1366 */
 
 @media only screen and (max-width: 1199px) {
 
+    h1, .h1 { font-size: 50px;  line-height: 63px; }
+
+    .entry-title {
+
+        .title {
+            margin-bottom: 15px;
+        }
+
+        .description {
+
+            &.description-lg {
+
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            p + p {
+                margin-top: 12px;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    .btn {
+        padding: 16px 25px;
+    }
+
     /***********************************
     HEADER STYLES
     ***********************************/
-    // .header-gutter {
-    //     height: 90px;
-    //     min-height: 90px;
-    // }
+    .header-gutter {
+        height: 86px;
+        min-height: 86px;
+    }
 
-    // .header {  
+    .header {
 
-    //     .navbar {
-    //         padding: 25px 0;
+        &.stop { 
 
-    //         .navbar-collapse {
+            .navbar { 
 
-    //             .navbar-nav {
-    //                 margin-left: -18px;
-    //                 margin-right: -15px;
+                .navbar-collapse {
 
-    //                 li {
-    //                     margin-left: 18px;
-    //                     margin-right: 18px;
-    //                 }
+                    .navbar-nav >  {
 
-    //                 &.navbar-right {
-    //                     padding-left: 30px;
+                        li {
 
-    //                     li {
-    //                         margin-left: 15px;
-    //                         margin-right: 15px;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+                            &.btn-menu {
+
+                                > a { 
+                                    padding: 13px 20px;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar {
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -10px;
+                    margin-right: -10px;
+
+                    > li {
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        &.btn-menu {
+
+                            > a {
+                                padding: 14px 20px;
+                            }
+                        }
+                    }
+
+                    &.navbar-right {
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+    }
 
     /***********************************
-    HOME STYLES
+    HOMES STYLES
     ***********************************/
+    .banner {
+        padding: 140px 0 200px;
+
+        &__media {
+            margin-right: -24px;
+            margin-bottom: -190px;
+        }
+
+        &__wave-layer {
+            width: 550%;
+        }
+    }
 
 }/* 1199 */ 
 
 @media only screen and (max-width: 991px) {
 
-    h1, .h1 { font-size: 50px;  line-height: 61px; }
-    h2, .h2 { font-size: 42px;  line-height: 53px; } 
-
-    .btn {
-        padding: 14px 30px;
-    }
-
-    input[type="text"]:not(.select2-input),
-    input[type="number"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="search"],
-    input[type="password"],
-    input[type="file"],
-    select, textarea {    
-        padding: 13px 20px !important;
-    }
-
-    /***********************************
-    HEADER STYLES
-    ***********************************/
-    // .header-gutter {
-    //     height: 80px;
-    //     min-height: 80px;
-    // }
-
-    // .header {
-
-    //     &.stop .navbar {
-    //         padding: 15px 0;
-    //     }
-
-    //     .navbar {
-    //         padding: 20px 0;
-
-    //         .navbar-collapse {
-
-    //             .navbar-nav {
-    //                 margin-left: -14px;
-    //                 margin-right: -12px;
-
-    //                 li {
-    //                     margin-left: 14px;
-    //                     margin-right: 14px;
-    //                 }
-
-    //                 &.navbar-right {
-    //                     padding-left: 24px;
-
-    //                     li {
-    //                         margin-left: 12px;
-    //                         margin-right: 12px;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    
-    /***********************************
-    HOME STYLES
-    ***********************************/
-
-}/* 991 */
-
-@media only screen and (max-width: 767px) { 
-
-    h1, .h1 { font-size: 42px;  line-height: 53px; }
-    h2, .h2 { font-size: 36px;  line-height: 43px; }
-    h3, .h3 { font-size: 32px;  line-height: 39px; }
-    h4, .h4 { font-size: 26px;  line-height: 34px; } 
-
-    .btn {
-        padding: 10px 22px;
-    }
+    h1, .h1 { font-size: 40px;  line-height: 53px; }
+    h2, .h2 { font-size: 36px;  line-height: 46px; }
 
     .entry-title {
 
-        .sub-title { 
-            margin-bottom: 0;
+        .title {
+            margin-bottom: 12px;
+        }
+
+        .description {
+
+            &.description-lg {
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
+            p + p {
+                margin-top: 10px;
+            }
         }
     }
 
-    input[type="text"]:not(.select2-input),
-    input[type="number"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="search"],
-    input[type="password"],
-    input[type="file"],
-    select, textarea {    
-        padding: 10px 15px !important;
+    .btn {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 14px 20px;
+
+        &.btn-lg {
+            font-size: 14px;
+        }
     }
 
     /***********************************
     HEADER STYLES
     ***********************************/
-    // .header-gutter {
-    //     height: 70px;
-    //     min-height: 70px;
-    // }
+    .header-gutter {
+        height: 101px;
+        min-height: 101px;
+    }
 
-    // .header {  
+    .header {
 
-    //     .navbar { 
+        &.stop { 
 
-    //         .navbar-collapse {
+            .navbar { 
 
-    //             .navbar-nav {  
+                .navbar-collapse {
 
-    //                 > li { 
-    //                     display: none;
+                    .navbar-nav >  {
 
-    //                     &.mobile-navbar-toggler {
-    //                         display: block !important;
-    //                     }
-    //                 } 
-    //             }
-    //         }
-    //     }
-    // }
+                        li {
+
+                            &.btn-menu {
+
+                                > a { 
+                                    padding: 11px 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar {
+
+            .navbar-header {
+
+                .logo  {
+
+                    .navbar-brand {
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav {
+                    margin-left: -8px;
+                    margin-right: -8px;
+
+                    > li {
+                        margin-left: 8px;
+                        margin-right: 8px;
+
+                        > a {
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+
+                        &.btn-menu {
+
+                            > a {
+                                font-size: 14px;
+                                line-height: 20px;
+                                padding: 12px 18px;
+                            }
+                        }
+                    }
+
+                    &.navbar-right {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
 
     /***********************************
-    HOME STYLES
+    HOMES STYLES
     ***********************************/
+    .banner {
+        padding: 130px 0 180px;
+
+        &__media {
+            margin-right: -24px;
+            margin-bottom: -170px;
+        }
+
+        &__wave-layer {
+            width: 600%;
+        }
+    }
+
+}/* 991 */
+
+@media only screen and (max-width: 767px) {  
+
+    h1, .h1 { font-size: 38px;  line-height: 48px; }
+    h2, .h2 { font-size: 32px;  line-height: 42px; }
+
+    .entry-title {
+
+        .title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn {
+        font-size: 15px;
+        line-height: 19px;
+        padding: 12px 18px;
+
+        &.btn-lg {
+            font-size: 13px;
+        }
+    }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header-gutter {
+        height: 89px;
+        min-height: 89px;
+    }
+
+    .header {
+
+        .navbar {
+
+            .navbar-header {
+
+                .logo  {
+
+                    .navbar-brand {
+                        max-width: 150px;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+
+                .navbar-nav { 
+
+                    > li {
+                        display: none;
+                    }
+
+                    &.navbar-right {
+
+                        li.mobile-navbar-toggler {
+                            display: block;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+    .banner {
+        padding: 120px 0 120px;
+
+        &__content {
+            margin: 0 auto;
+            max-width: 425px;
+            text-align: center;
+
+            .title {
+                max-width: 383px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &__media {
+            margin: 40px 0 -50px 0;
+        }
+
+        &__wave-layer {
+            width: 720%;
+        }
+    }
    
 }/* 767 */ 
 
 @media only screen and (max-width: 575px) { 
 
-    h1, .h1 { font-size: 36px;  line-height: 43px; }
-    h2, .h2 { font-size: 32px;  line-height: 39px; }
-    h3, .h3 { font-size: 26px;  line-height: 34px; }
-    h4, .h4 { font-size: 22px;  line-height: 27px; }
-    h5, .h5 { font-size: 20px;  line-height: 25px; } 
+    body {
+        font-size: 18px;
+        line-height: 28px;
+    }
 
-    .btn {
-        padding: 7px 15px;
+    h1, .h1 { font-size: 32px;  line-height: 42px; }
+    h2, .h2 { font-size: 28px;  line-height: 34px; }
+    h3, .h3 { font-size: 26px;  line-height: 34px; }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header-gutter {
+        height: 85px;
+        min-height: 85px;
+    }
+
+    .header {
+
+        .navbar {
+            padding: 24px 0;
+
+            .navbar-header {
+
+                .logo  {
+
+                    .navbar-brand {
+                        max-width: 130px;
+                    }
+                }
+            }
+        }
     }
 
     /***********************************
-    HOME STYLES
+    HOMES STYLES
     ***********************************/
-    // .header { 
+    .banner {
+        padding: 113px 0 80px;
 
-    //     .navbar { 
+        &__content {
 
-    //         .navbar-collapse {
+            .title {
+                max-width: 341px; 
+            }
+        }
 
-    //             .navbar-nav {
-    //                 margin-left: -10px;
-    //                 margin-right: -9px;
+        &__media {
+            margin-bottom: -40px;
+        }
 
-    //                 li {
-    //                     margin-left: 10px;
-    //                     margin-right: 10px;
-    //                 }
-
-    //                 &.navbar-right {
-    //                     padding-left: 18px;
-
-    //                     li {
-    //                         margin-left: 9px;
-    //                         margin-right: 9px;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-    /***********************************
-    HOME STYLES
-    ***********************************/
+        &__wave-layer {
+            width: 780%;
+        }
+    }
 
 }/* 575 */
 
 @media only screen and (max-width: 480px) {
 
-    h1, .h1 { font-size: 32px;  line-height: 39px; }
-    h2, .h2 { font-size: 28px;  line-height: 35px; }
-    h3, .h3 { font-size: 24px;  line-height: 32px; }
+    body {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    h1, .h1 { font-size: 30px;  line-height: 40px; }
+
+    .entry-title {
+
+        .description {
+
+            &.description-lg {
+
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
 
     /***********************************
-    PORTFOLIO STYLES
+    HEADER STYLES
     ***********************************/
+    .header-gutter {
+        height: 85px;
+        min-height: 85px;
+    }
+
+    .header {
+
+        .navbar {
+            padding: 24px 0;
+
+            .navbar-header {
+
+                .logo  {
+
+                    .navbar-brand {
+                        max-width: 130px;
+                    }
+                }
+            }
+        }
+    }
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+    .banner {
+        padding: 110px 0 80px;
+
+        &__content {
+
+            .title {
+                max-width: 341px; 
+            }
+        }
+
+        &__media {
+            margin-bottom: -40px;
+        }
+
+        &__wave-layer {
+            width: 780%;
+        }
+    }
 
 } /* 480 */
