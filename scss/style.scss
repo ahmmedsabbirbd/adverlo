@@ -885,6 +885,81 @@ HOME STYLES
 	}
 }
 
+.meet-team {
+	overflow: hidden;
+	padding: 190px 0 205px;
+	background: linear-gradient(176.62deg, #2D032A -2.48%, #160831 48.03%, #02201E 100.68%);
+
+	.container {
+		z-index: 1;
+		position: relative;
+
+		&:after, &:before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			background-repeat: no-repeat;
+			animation: 3s ease 0s infinite running floating-up-30; 
+		}
+
+		&:after {
+			top: -30px;
+			left: -308px;
+			width: 330.16px;
+			height: 495.73px;
+			animation-delay: 1s;
+			background-image: url(images/triangle-5.png);
+		}
+
+		&:before {
+			top: -78px;
+			right: -741px;
+			width: 643.29px;
+			height: 585.75px;
+			background-image: url(images/triangle-6.png);
+		}
+	}
+
+	&__content {
+		max-width: 872px;
+		margin: 0 auto 50px;
+	}
+
+	&__item {
+		height: 100%;
+
+		&-wrapper {
+			gap: 39px;
+			margin: auto;
+			display: grid;
+			max-width: 877px;
+  			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.media {
+			width: 194px;
+			height: 194px;
+			overflow: hidden;
+			margin: 0 auto 30px;
+			@include border-radius(500px);
+			border: 2.27083px solid $pink;
+		}
+
+		.text {
+
+			.title {
+				font-weight: 600;
+				margin-bottom: 8px;
+			}
+
+			.position {
+				display: block;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
 /***********************************
 FOOTER STYLES
 ***********************************/
