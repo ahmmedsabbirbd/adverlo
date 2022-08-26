@@ -586,10 +586,6 @@ section {
   color: #FFF !important;
 }
 
-.content-area {
-  overflow: hidden;
-}
-
 /***********************************
 PAGE LOAD ANIMATION
 ***********************************/
@@ -1097,6 +1093,7 @@ HOME STYLES
 }
 
 .why-adverlo {
+  overflow: hidden;
   padding: 50px 0 125px;
 }
 .why-adverlo__content {
@@ -1107,6 +1104,7 @@ HOME STYLES
 }
 
 .businesses {
+  overflow: hidden;
   padding: 102px 0 162px;
   background: linear-gradient(159.36deg, #2D032A 10.63%, #160831 47.18%, #02201E 85.3%);
 }
@@ -1160,6 +1158,7 @@ HOME STYLES
 }
 
 .what-do {
+  overflow: hidden;
   padding: 125px 0 155px;
 }
 .what-do__content .paid {
@@ -1167,6 +1166,7 @@ HOME STYLES
 }
 
 .services-area {
+  overflow: hidden;
   padding: 155px 0 197px;
   background: linear-gradient(176.62deg, #2D032A -2.48%, #160831 48.03%, #02201E 100.68%);
 }
@@ -1204,6 +1204,33 @@ HOME STYLES
 }
 .services-area__media {
   margin-left: -54px;
+}
+
+.new-heights {
+  padding: 100px 0;
+}
+.new-heights .container {
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+}
+.new-heights .container .row > [class*=col] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.new-heights__content {
+  top: 10vh;
+  overflow: hidden;
+  position: sticky;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  position: -webkit-sticky;
+}
+.new-heights__content-wrapper {
+  height: 150vh;
+}
+.new-heights__content .title {
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 /***********************************
@@ -1660,6 +1687,16 @@ MEDIA QUERIES
   .services-area {
     padding: 80px 0 90px;
   }
+
+  .new-heights {
+    padding: 80px 0;
+  }
+  .new-heights__content {
+    top: 12vh;
+  }
+  .new-heights__content .title {
+    margin-bottom: 30px;
+  }
 }
 /* 1199 */
 @media only screen and (max-width: 991px) {
@@ -1753,6 +1790,20 @@ MEDIA QUERIES
 
   .services-area {
     padding: 70px 0;
+  }
+
+  .new-heights {
+    padding: 60px 0;
+  }
+  .new-heights__content {
+    top: 15vh;
+  }
+  .new-heights__content .title {
+    margin-bottom: 20px;
+  }
+  .new-heights__media {
+    margin-left: -23px;
+    margin-right: -77px;
   }
 }
 /* 991 */
@@ -1853,6 +1904,16 @@ MEDIA QUERIES
   .services-area__media {
     margin-left: 0;
   }
+
+  .new-heights {
+    padding: 50px 0;
+  }
+  .new-heights__content {
+    top: 20vh;
+  }
+  .new-heights__content .title {
+    margin-bottom: 15px;
+  }
 }
 /* 767 */
 @media only screen and (max-width: 575px) {
@@ -1945,6 +2006,10 @@ MEDIA QUERIES
   .services-area {
     padding: 40px 0 30px;
   }
+
+  .new-heights__content {
+    top: 15vh;
+  }
 }
 /* 575 */
 @media only screen and (max-width: 480px) {
@@ -2016,6 +2081,15 @@ MEDIA QUERIES
     margin-left: auto;
     margin-right: auto;
     max-width: 246.29px;
+  }
+
+  .new-heights__content {
+    top: 15vh;
+  }
+  .new-heights__content .title {
+    max-width: 272px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* 480 */

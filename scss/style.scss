@@ -171,9 +171,6 @@ section {
 
 .color-white { color: $white !important; }
 
-.content-area {
-	overflow: hidden;
-}
 
 /***********************************
 PAGE LOAD ANIMATION
@@ -726,6 +723,7 @@ HOME STYLES
 }
 
 .why-adverlo {
+	overflow: hidden;
 	padding: 50px 0 125px;
 
 	&__content {
@@ -741,6 +739,7 @@ HOME STYLES
 }
 
 .businesses {
+	overflow: hidden;
 	padding: 102px 0 162px;
 	background: linear-gradient(159.36deg, #2D032A 10.63%, #160831 47.18%, #02201E 85.3%);
 
@@ -798,6 +797,7 @@ HOME STYLES
 }
 
 .what-do {
+	overflow: hidden;
 	padding: 125px 0 155px;
 
 	&__content {
@@ -809,6 +809,7 @@ HOME STYLES
 }
 
 .services-area {
+	overflow: hidden;
 	padding: 155px 0 197px;
 	background: linear-gradient(176.62deg, #2D032A -2.48%, #160831 48.03%, #02201E 100.68%);
 
@@ -851,6 +852,39 @@ HOME STYLES
 		margin-left: -54px;
 	}
 }
+
+.new-heights {
+	padding: 100px 0;
+
+	.container {
+		padding-left: 13.5px;
+		padding-right: 13.5px;
+
+		.row > [class*=col] {
+		    padding-left: 0;
+		    padding-right: 0;
+		}
+	}
+
+	&__content {
+		top: 10vh;
+		overflow: hidden;
+		position: sticky;
+		padding-left: 10.5px;
+		padding-right: 10.5px;
+		position: -webkit-sticky;
+
+		&-wrapper {
+			height: 150vh;
+		}
+
+		.title {
+			text-align: center;
+			margin-bottom: 35px;
+		}
+	}
+}
+
 /***********************************
 FOOTER STYLES
 ***********************************/
