@@ -970,7 +970,10 @@ HOME STYLES
 
 	&__background {
 		z-index: 1;
+		margin-left: auto;
 		position: relative;
+		margin-right: auto;
+		max-width: 1246.77px;
 		padding: 86px 50px 92px;
 
 		&:after {
@@ -994,6 +997,7 @@ HOME STYLES
 
 	&__content {
 		max-width: 401px;
+		margin-right: 24px;
 
 		.meta {
 			margin-bottom: 25px;
@@ -1013,6 +1017,8 @@ HOME STYLES
 
 		.title {
 			margin-bottom: 20px;
+			font-size: 26px !important;
+			line-height: 36px !important;
 		}
 
 		.sub-title {
@@ -1024,6 +1030,9 @@ HOME STYLES
 			font-size: 16px;
 			line-height: 26px;
 
+			p + p {
+				margin-top: 25px;
+			}
 		}
 	}
 

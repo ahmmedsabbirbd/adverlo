@@ -1333,7 +1333,10 @@ HOME STYLES
 }
 .meeting__background {
   z-index: 1;
+  margin-left: auto;
   position: relative;
+  margin-right: auto;
+  max-width: 1246.77px;
   padding: 86px 50px 92px;
 }
 .meeting__background:after {
@@ -1359,6 +1362,7 @@ HOME STYLES
 }
 .meeting__content {
   max-width: 401px;
+  margin-right: 24px;
 }
 .meeting__content .meta {
   margin-bottom: 25px;
@@ -1375,6 +1379,8 @@ HOME STYLES
 }
 .meeting__content .title {
   margin-bottom: 20px;
+  font-size: 26px !important;
+  line-height: 36px !important;
 }
 .meeting__content .sub-title {
   margin-bottom: 30px;
@@ -1383,6 +1389,9 @@ HOME STYLES
   color: #404040;
   font-size: 16px;
   line-height: 26px;
+}
+.meeting__content .description p + p {
+  margin-top: 25px;
 }
 .meeting__calendar {
   z-index: 1;
@@ -1809,6 +1818,10 @@ MEDIA QUERIES
     margin-bottom: 5px;
   }
 
+  .meeting {
+    padding: 80px 0;
+  }
+
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -1933,6 +1946,19 @@ MEDIA QUERIES
   .meet-team__item .text .position {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .meeting {
+    padding: 60px 0;
+  }
+  .meeting__background {
+    padding: 75px 40px;
+  }
+  .meeting__calendar {
+    padding: 40px;
+  }
+  .meeting__calendar .hasDatepicker {
+    padding: 25px;
   }
 
   /***********************************
@@ -2076,6 +2102,75 @@ MEDIA QUERIES
     line-height: 14px;
   }
 
+  .meeting {
+    padding-bottom: 50px;
+  }
+  .meeting__background {
+    padding: 0;
+  }
+  .meeting__background:after {
+    position: inherit;
+  }
+  .meeting__content {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .meeting__content .meta {
+    margin-bottom: 15px;
+  }
+  .meeting__content .meta .media {
+    max-width: 90px;
+    margin-left: auto;
+    margin-bottom: 9px;
+    margin-right: auto;
+  }
+  .meeting__content .title {
+    margin-bottom: 10px;
+  }
+  .meeting__content .sub-title {
+    margin-bottom: 22px;
+  }
+  .meeting__content .description p + p {
+    margin-top: 20px;
+  }
+  .meeting__calendar {
+    padding: 35px;
+  }
+  .meeting__calendar .hasDatepicker {
+    padding: 20px;
+  }
+
+  .ui-datepicker-header {
+    margin-bottom: 10px;
+  }
+  .ui-datepicker-title {
+    margin: 0 30px;
+    font-size: 15px;
+    line-height: 25px !important;
+  }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 25px;
+    height: 25px;
+  }
+  .ui-datepicker table {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .ui-datepicker th {
+    font-size: 15px !important;
+    line-height: 21px !important;
+    padding: 10px 2px !important;
+  }
+  .ui-datepicker tr {
+    margin: 2px 0;
+  }
+  .ui-datepicker td a {
+    font-size: 15px !important;
+    line-height: 21px !important;
+    padding: 9px !important;
+  }
+
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -2209,6 +2304,48 @@ MEDIA QUERIES
     max-width: 60px;
   }
 
+  .meeting__content {
+    margin-bottom: 30px;
+  }
+  .meeting__content .meta {
+    margin-bottom: 9px;
+  }
+  .meeting__content .meta .media {
+    max-width: 80px;
+  }
+  .meeting__calendar {
+    padding: 30px;
+  }
+  .meeting__calendar .title {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 18px;
+  }
+
+  .ui-datepicker-header {
+    margin-bottom: 5px;
+  }
+  .ui-datepicker-title {
+    margin: 0 30px;
+    font-size: 14px;
+    line-height: 20px !important;
+  }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+  }
+  .ui-datepicker table {
+    font-size: 12px;
+  }
+  .ui-datepicker th {
+    font-size: 12px !important;
+  }
+  .ui-datepicker td a {
+    font-size: 12px !important;
+    padding: 5px !important;
+  }
+
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -2329,6 +2466,25 @@ MEDIA QUERIES
   .meet-team__item .text .position {
     line-height: 9px;
     font-size: 7.56945px;
+  }
+
+  .meeting__content .descrption p {
+    color: #000;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .meeting__calendar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .meeting__calendar:after {
+    -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.07);
+  }
+  .meeting__calendar .title {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 14px;
   }
 
   /***********************************
