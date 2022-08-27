@@ -183,6 +183,17 @@ MEDIA QUERIES
         }
     }
 
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+        padding-top: 90px;
+
+        &__top {
+            margin-bottom: 80px;
+        }
+    }
+
 } /* 1366 */
 
 @media only screen and (max-width: 1199px) {
@@ -363,6 +374,24 @@ MEDIA QUERIES
                     font-size: 16px;
                     line-height: 20px;
                 }
+            }
+        }
+    }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+
+        &__top {
+            margin-bottom: 60px;
+
+            .title {
+                margin-bottom: 30px;
+            }
+
+            .media {
+                margin-bottom: 30px;
             }
         }
     }
@@ -569,6 +598,20 @@ MEDIA QUERIES
         }
     }
 
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+
+        &.__wave-layer {
+            width: 430%;
+        }
+
+        &__top {
+            margin-bottom: 53px;
+        }
+    }
+
 }/* 991 */
 
 @media only screen and (max-width: 767px) {  
@@ -742,6 +785,16 @@ MEDIA QUERIES
             }
         }
     }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+
+        &__wave-layer {
+            width: 600%;
+        }
+    }
    
 }/* 767 */ 
 
@@ -893,6 +946,37 @@ MEDIA QUERIES
         }
     }
 
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+        padding: 46px 0;
+
+        &__wave-wrapper {
+            position: inherit;
+        }
+
+        &__top {
+
+            .description {
+
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        &__menu {
+            padding-top: 30px;
+
+            a {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
 }/* 575 */
 
 @media only screen and (max-width: 480px) {
@@ -1020,5 +1104,33 @@ MEDIA QUERIES
             }
         }
     }
+
+    /***********************************
+    FOOTER STYLES
+    ***********************************/
+    .footer {
+        padding-top: 38px;
+
+        &__top {
+
+            .description {
+
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        &__menu {
+            padding-top: 30px;
+
+            a {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
 
 } /* 480 */

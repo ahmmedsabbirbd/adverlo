@@ -1002,11 +1002,14 @@ FOOTER STYLES
 			width: 350%;
 			height: 100%;
 			position: absolute;
-			background-size: 65% 71px;
+			background-size: 58% 71px;
 			background-position: 0 top;
 			transform-origin: center top;
 			background-repeat: repeat no-repeat;
-			animation: move_wave 15s linear infinite;
+
+			&.waveAnimation {
+				animation: move_wave 30s linear infinite;
+			}
 		}
 	}
 
@@ -1043,6 +1046,7 @@ FOOTER STYLES
 	}
 
 	&__menu {
+		gap: 14px;
 		padding-top: 20px;
 
 		a {
