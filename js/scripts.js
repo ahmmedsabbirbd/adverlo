@@ -124,6 +124,14 @@
 	
 	window.onload = imgReplace;
 	window.onresize = imgReplace;
+
+	/*** Date Picker */
+	$("#datepickerinline").datepicker({
+		inline: true,
+	});
+
+    $('#datepickerinline').datepicker('setDate', $('#datepickerinline').data('date'));
+
 	
 	/*** Image to SVG */
 	$('img.svg').each(function(){

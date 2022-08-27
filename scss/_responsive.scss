@@ -1113,12 +1113,8 @@ MEDIA QUERIES
 
         &__top {
 
-            .description {
+            .media {
 
-                p {
-                    font-size: 15px;
-                    line-height: 25px;
-                }
             }
         }
 
@@ -1134,3 +1130,16 @@ MEDIA QUERIES
 
 
 } /* 480 */
+
+@media only screen and (max-width: 350px) {
+
+
+    /***********************************
+    HOMES STYLES
+    ***********************************/
+    .meet-team__item-wrapper {
+        gap: 24px;
+    }
+
+
+} /* 350 */
