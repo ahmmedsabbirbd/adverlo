@@ -1264,6 +1264,7 @@ HOME STYLES
 
 .meeting {
   padding: 95px 0;
+  overflow: hidden;
 }
 .meeting__background {
   z-index: 1;
