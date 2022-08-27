@@ -1317,7 +1317,6 @@ HOME STYLES
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  border: 2.27083px solid #F03A9E;
 }
 .meet-team__item .text .title {
   font-weight: 600;
@@ -1809,9 +1808,6 @@ MEDIA QUERIES
     height: 180px;
     margin-bottom: 20px;
   }
-  .meet-team__item .media img {
-    max-width: 140px;
-  }
   .meet-team__item .text .title {
     font-size: 22px;
     line-height: 28px;
@@ -1935,9 +1931,6 @@ MEDIA QUERIES
     width: 150px;
     height: 150px;
     margin-bottom: 15px;
-  }
-  .meet-team__item .media img {
-    max-width: 110px;
   }
   .meet-team__item .text .title {
     font-size: 18px;
@@ -2089,9 +2082,6 @@ MEDIA QUERIES
     width: 100px;
     height: 100px;
     margin-bottom: 12px;
-  }
-  .meet-team__item .media img {
-    max-width: 80px;
   }
   .meet-team__item .text .title {
     font-size: 12px;
@@ -2300,9 +2290,6 @@ MEDIA QUERIES
     width: 80px;
     height: 80px;
   }
-  .meet-team__item .media img {
-    max-width: 60px;
-  }
 
   .meeting__content {
     margin-bottom: 30px;
@@ -2455,9 +2442,6 @@ MEDIA QUERIES
   .meet-team__item .media {
     width: 73.42px;
     height: 73.42px;
-  }
-  .meet-team__item .media img {
-    max-width: 55px;
   }
   .meet-team__item .text .title {
     line-height: 13px;
