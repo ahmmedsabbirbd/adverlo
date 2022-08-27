@@ -1,20 +1,11 @@
 (function ($) { 
-
-	// /*** Page Load Animation */
-	// const load = document.querySelector("#load");
- //    window.addEventListener("load", (event) => {
- //        setTimeout(function(){ 
- //        	load.parentElement.removeChild(load);
-    		
- //    		/*** AOS */
- //    		AOS.init({
- //    			once: true,
- //    			offset: 100,
- //    			duration: 900,
- //    		});
-
-	// 	}, 3000);
- //    });
+ 
+	/*** AOS */
+	AOS.init({
+		once: true,
+		offset: 100,
+		duration: 900,
+	}); 
 
     /*** Scroll To Top */
     $(window).scroll(function(){
