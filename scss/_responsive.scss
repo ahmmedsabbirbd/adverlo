@@ -116,6 +116,12 @@ MEDIA QUERIES
 
             .title {
                 margin-bottom: 20px;
+
+                span:after {
+                    top: -3px;
+                    width: 206px;
+                    height: 92px;
+                }
             }
 
             .description {
@@ -283,6 +289,13 @@ MEDIA QUERIES
 
             .title {
                 margin-bottom: 15px;
+
+                span:after {
+                    top: -2px;
+                    left: -8px;
+                    width: 163px;
+                    height: 79px;
+                }
             }
 
             p + p {
@@ -512,6 +525,16 @@ MEDIA QUERIES
         padding: 130px 0 180px;
 
         &__content {
+
+            .title {
+
+                span:after {
+                    top: -1px;
+                    left: -7px;
+                    width: 131px;
+                    height: 90px;
+                }
+            }
 
             .description {
 
@@ -1007,7 +1030,14 @@ MEDIA QUERIES
         &__content {
 
             .title {
-                max-width: 341px; 
+                max-width: 341px;
+
+                span:after {
+                    top: -2px;
+                    left: -5px;
+                    width: 109px;
+                    height: 87px;
+                }
             }
         }
 
@@ -1219,7 +1249,14 @@ MEDIA QUERIES
         &__content {
 
             .title {
-                max-width: 319px; 
+                max-width: 319px;
+
+                span:after {
+                    top: -4px;
+                    width: 106.15px;
+                    height: 49.48px;
+                    background-image: url(images/mobile-click-circle.svg);
+                }
             }
 
             .btn {

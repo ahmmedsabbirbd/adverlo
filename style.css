@@ -1005,6 +1005,22 @@ HOME STYLES
   max-width: 615px;
   position: relative;
 }
+.banner__content .title span {
+  z-index: 1;
+  position: relative;
+}
+.banner__content .title span:after {
+  top: -2px;
+  left: -12px;
+  z-index: -1;
+  content: "";
+  width: 222px;
+  height: 110px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/click-circle.svg);
+}
 .banner__media {
   z-index: 6;
   position: relative;
@@ -1710,6 +1726,11 @@ MEDIA QUERIES
   .banner__content .title {
     margin-bottom: 20px;
   }
+  .banner__content .title span:after {
+    top: -3px;
+    width: 206px;
+    height: 92px;
+  }
   .banner__content .description.description-lg p {
     font-size: 22px;
     line-height: 32px;
@@ -1810,6 +1831,12 @@ MEDIA QUERIES
   }
   .banner__content .title {
     margin-bottom: 15px;
+  }
+  .banner__content .title span:after {
+    top: -2px;
+    left: -8px;
+    width: 163px;
+    height: 79px;
   }
   .banner__content p + p {
     margin-top: 12px;
@@ -1960,6 +1987,12 @@ MEDIA QUERIES
   ***********************************/
   .banner {
     padding: 130px 0 180px;
+  }
+  .banner__content .title span:after {
+    top: -1px;
+    left: -7px;
+    width: 131px;
+    height: 90px;
   }
   .banner__content .description p + p {
     margin-top: 10px;
@@ -2328,6 +2361,12 @@ MEDIA QUERIES
   .banner__content .title {
     max-width: 341px;
   }
+  .banner__content .title span:after {
+    top: -2px;
+    left: -5px;
+    width: 109px;
+    height: 87px;
+  }
   .banner__media {
     max-width: 277px;
     margin-left: auto;
@@ -2465,6 +2504,12 @@ MEDIA QUERIES
   ***********************************/
   .banner__content .title {
     max-width: 319px;
+  }
+  .banner__content .title span:after {
+    top: -4px;
+    width: 106.15px;
+    height: 49.48px;
+    background-image: url(images/mobile-click-circle.svg);
   }
   .banner__content .btn {
     background-color: #F03A9E;

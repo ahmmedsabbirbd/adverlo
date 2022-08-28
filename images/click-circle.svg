@@ -1,0 +1,13 @@
+<svg width="222" height="99" viewBox="0 0 222 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M106.45 95.5236C135.912 98.5687 163.175 96.5104 183.462 90.6496C193.599 87.7208 202.096 83.8133 208.257 79.033C214.424 74.2484 218.389 68.4696 219.075 61.8368C220.615 46.9321 208.633 33.98 189.953 24.1906C171.095 14.3079 144.594 7.16747 115.159 4.1251C85.6772 1.0779 58.5413 3.56653 38.3875 9.86225C28.3151 13.0087 19.8933 17.1351 13.7934 22.0775C7.69158 27.0215 3.78029 32.8999 3.09672 39.5134C2.41116 46.1462 5.11112 52.614 10.1685 58.5586C15.2213 64.498 22.7395 70.0608 32.0639 75.0012C50.7229 84.8874 76.9887 92.4785 106.45 95.5236Z" stroke="url(#paint0_linear_101_1900)" stroke-width="4"/>
+<defs>
+<linearGradient id="paint0_linear_101_1900" x1="119.891" y1="7.88648" x2="102.602" y2="92.9389" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#63F9F2" stop-opacity="1">
+		<animate attributeName="stop-color" values="#63F9F2; #63f9f200; #63F9F2;" dur="2s" repeatCount="indefinite"></animate>
+	</stop>
+	<stop offset="1" stop-color="#63F9F2" stop-opacity="0">
+		<animate attributeName="stop-opacity" values="0; 1; 0;" begin="0.5s;op.end+0.5s" dur="2s" repeatCount="indefinite"></animate>
+	</stop>
+</linearGradient>
+</defs>
+</svg>
